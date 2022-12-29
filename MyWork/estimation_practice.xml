@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R1</id>
+	<name>estimation practice</name>
+	<description></description>
+	<config></config>
+	<createdon>2022-12-04T14:27:58Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>75</percent>
+			<count>3</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>25</percent>
+			<count>1</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>High level test</name>
+		<description></description>
+						<tests>
+																																																									<test>
+				<id>T1</id>
+				<title>Create an order in the glovo application</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Download the application to your mobile device.
+Register in the app.
+Log in to the app.
+Open the app</preconds>
+										<steps>1.Choose the category &quot;Їжа&quot;
+2.Choose the restorant 
+3.Add the selected dish to the basket
+4.Open the basket
+5.Provide information about allergies 
+6.To note the need for silverware
+7.Specify the delivery address 
+8.Сhoose another recipient
+9.Choose the time of delivery 
+10.Choose a payment method 
+11.Add a promo code 
+12.Check your personal details
+13.Сonfirm the order 
+
+
+
+</steps>
+										<expected>Order created. 
+The system redirects to the page with details and tracking of the order  </expected>
+									</custom>
+												<caseid>C1</caseid>
+																<status>Passed</status>
+																<assignedto>Karina Tysiachna</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-12-04T14:28:28Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Passed</status>
+																								<assignedto>Karina Tysiachna</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-12-04T14:27:58Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+								<sections>
+		<section>
+		<name>Low level test</name>
+		<description></description>
+						<tests>
+																																																									<test>
+				<id>T2</id>
+				<title>Add product to basket</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Download the application to your mobile device.
+Register in the app.
+Log in to the app.
+Open the app
+Choose the delivery address &quot;Мілютенка 25&quot;</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the icon &quot;Їжа&quot;</content><expected>The system opened icon &quot;Food&quot;</expected></step>
+<step>
+<index>2</index><content>Click on the icon &quot;Ресторани&quot;</content><expected>The system opened page with all available restaurant </expected></step>
+<step>
+<index>3</index><content>Click on picture of &quot;Just Doner&quot; restaurant </content><expected>The system opened this restaurant and their menu </expected></step>
+<step>
+<index>4</index><content>Click on radio button &quot;Доставка&quot; at the high part of page </content><expected></expected></step>
+<step>
+<index>5</index><content>Click on category &quot;Хіт продажів&quot;</content><expected>The system opened the page with popular dishes  </expected></step>
+<step>
+<index>6</index><content>Click on the dish picture &quot;Донер з куркою MEGA XXL 500г&quot;</content><expected>The System opened description of dish </expected></step>
+<step>
+<index>7</index><content>Click on category &quot;Додатки&quot; </content><expected>Opened a subsection with double category </expected></step>
+<step>
+<index>8</index><content>Click on the plus to add additional cheese </content><expected>the amount is displayed taking into account the additional ingredient </expected></step>
+<step>
+<index>9</index><content>Click on green button &quot;Додати&quot; at the bottom of the page </content><expected>The System write  a confirmation message &quot;Ура замовлення додано&quot; </expected></step>
+<step>
+<index>10</index><content>Click on green button at the bottom of the page </content><expected>The system opened the basket </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C2</caseid>
+																<status>Passed</status>
+																<assignedto>Karina Tysiachna</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-12-04T14:30:23Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<content>Click on the icon &quot;Їжа&quot;</content><expected>The system opened icon &quot;Food&quot;</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on the icon &quot;Ресторани&quot;</content><expected>The system opened page with all available restaurant </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on picture of &quot;Just Doner&quot; restaurant </content><expected>The system opened this restaurant and their menu </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on radio button &quot;Доставка&quot; at the high part of page </content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Хіт продажів&quot;</content><expected>The system opened the page with popular dishes  </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on the dish picture &quot;Донер з куркою MEGA XXL 500г&quot;</content><expected>The System opened description of dish </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Додатки&quot; </content><expected>Opened a subsection with double category </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on the plus to add additional cheese </content><expected>the amount is displayed taking into account the additional ingredient </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green button &quot;Додати&quot; at the bottom of the page </content><expected>The System write  a confirmation message &quot;Ура замовлення додано&quot; </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green button at the bottom of the page </content><expected>The system opened the basket </expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2022-12-04T14:27:58Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T3</id>
+				<title>Create  an order in the glovo application</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Download the application to your mobile device.
+Register in the app.
+Log in to the app.
+Open the app
+Choose the delivery address &quot;Мілютенка 25&quot;
+Add product to the basket </preconds>
+										<steps_separated><step>
+<index>1</index><content>Сheck order details 
+</content><expected></expected></step>
+<step>
+<index>2</index><content>Click on green plus near the name of dish</content><expected>the system adds an additional product 
+The amount of the product is increased by 2 times 
+</expected></step>
+<step>
+<index>3</index><content>Click on category &quot;Вказати інформацію про алергію&quot; </content><expected>the page for entering text opens </expected></step>
+<step>
+<index>4</index><content>Write a message about mushroom allergy 
+Click on button &quot;Зберегти&quot;</content><expected>System saved our message in our order page  </expected></step>
+<step>
+<index>5</index><content>Click on radio button &quot;Потрібні столові прибори&quot; </content><expected></expected></step>
+<step>
+<index>6</index><content>Check the automatically generated address </content><expected>The system generated the address automatically, it is depend of you choice of address in the start of procedure </expected></step>
+<step>
+<index>7</index><content>Click on category &quot;Надсилаєте інший особі&quot;</content><expected>The system open the page where you can write a personal information of another person </expected></step>
+<step>
+<index>8</index><content>Press the input and write the name of the person who will pick up the delivery. (Nikita)
+ </content><expected></expected></step>
+<step>
+<index>9</index><content>Click on Flag  at the left part of page and choice a country code (Ukraine +380) and write a correct Ukrainian phone number </content><expected></expected></step>
+<step>
+<index>10</index><content>Click on green button &quot;Зберегти&quot;</content><expected>The system redirect to order page and save our information </expected></step>
+<step>
+<index>11</index><content>Click on category &quot;Спосіб оплати&quot; and choose &quot;Оплата готівкою &quot;</content><expected>The system saved our information </expected></step>
+<step>
+<index>12</index><content>Click on category &quot;Є промкод?&quot; </content><expected>the system open the input where we can write a prom code </expected></step>
+<step>
+<index>13</index><content>Write a prom code FTK2738647 and click on button &quot;Застосувати&quot;  in the lower right corner of the page </content><expected>the system will save our promo code and recalculate the total amount of the order </expected></step>
+<step>
+<index>14</index><content>Click on green button &quot;Підтвердити замовлення&quot; in the lower part of page </content><expected>Order created. 
+The system redirects to the page with details and tracking of the order  </expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C3</caseid>
+																<status>Passed</status>
+																<assignedto>Karina Tysiachna</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-12-04T14:33:18Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<content>Сheck order details 
+</content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green plus near the name of dish</content><expected>the system adds an additional product 
+The amount of the product is increased by 2 times 
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Вказати інформацію про алергію&quot; </content><expected>the page for entering text opens </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Write a message about mushroom allergy 
+Click on button &quot;Зберегти&quot;</content><expected>System saved our message in our order page  </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on radio button &quot;Потрібні столові прибори&quot; </content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Check the automatically generated address </content><expected>The system generated the address automatically, it is depend of you choice of address in the start of procedure </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Надсилаєте інший особі&quot;</content><expected>The system open the page where you can write a personal information of another person </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Press the input and write the name of the person who will pick up the delivery. (Nikita)
+ </content><expected></expected><actual>The system allows you to write in letters and numbers, Cyrillic and Latin</actual><status>Passed</status></step>
+<step>
+<content>Click on Flag  at the left part of page and choice a country code (Ukraine +380) and write a correct Ukrainian phone number </content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green button &quot;Зберегти&quot;</content><expected>The system redirect to order page and save our information </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Спосіб оплати&quot; and choose &quot;Оплата готівкою &quot;</content><expected>The system saved our information </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Є промкод?&quot; </content><expected>the system open the input where we can write a prom code </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Write a prom code FTK2738647 and click on button &quot;Застосувати&quot;  in the lower right corner of the page </content><expected>the system will save our promo code and recalculate the total amount of the order </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green button &quot;Підтвердити замовлення&quot; in the lower part of page </content><expected>Order created. 
+The system redirects to the page with details and tracking of the order  </expected><actual></actual><status>Passed</status></step>
+</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2022-12-04T14:27:58Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T4</id>
+				<title>Create an order in the glovo application with changing the delivery address at the final stage of the order</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Download the application to your mobile device.
+Register in the app.
+Log in to the app.
+Open the app
+Choose the delivery address &quot;Мілютенка 25&quot;
+Add product to the basket</preconds>
+										<steps_separated><step>
+<index>1</index><content>Сheck order details</content><expected></expected></step>
+<step>
+<index>2</index><content>Click on category &quot;Вказати інформацію про алергію&quot;</content><expected>the page for entering text opens
+</expected></step>
+<step>
+<index>3</index><content>Write a message about nuts allergy 
+Click on button &quot;Зберегти&quot;</content><expected>System saved our message in our order page  </expected></step>
+<step>
+<index>4</index><content>Click on radio button &quot;Потрібні столові прибори&quot;</content><expected></expected></step>
+<step>
+<index>5</index><content>Check the automatically generated address</content><expected>The system generated the address automatically, it is depend of you choice of address in the start of procedure. The choice of restaurants that can bring the order depends on the choice of address.</expected></step>
+<step>
+<index>6</index><content>Click on green flag in the right part of page in category &quot;Інформація про доставку&quot;</content><expected>the system open page with map and input where you can write a name of street </expected></step>
+<step>
+<index>7</index><content>Click on search input and write name of street &quot;Боричів тік 30&quot;
+</content><expected>
+</expected></step>
+<step>
+<index>8</index><content>Click on green button in the lower part of page &quot;Підтвердити адресу&quot;</content><expected>The system redirects to the order page. The system displays an error message &quot;ОЙ! перепрошуємо, цей заклад більше не доступний&quot;
+The system does not allow to finish processing with a new address
+
+</expected></step>
+</steps_separated>
+									</custom>
+												<caseid>C4</caseid>
+																<status>Failed</status>
+																<assignedto>Karina Tysiachna</assignedto>
+																<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-12-04T14:39:34Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Failed</status>
+																								<assignedto>Karina Tysiachna</assignedto>
+																		<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																														<custom>
+														<step_results><step>
+<content>Сheck order details</content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on category &quot;Вказати інформацію про алергію&quot;</content><expected>the page for entering text opens
+</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Write a message about nuts allergy 
+Click on button &quot;Зберегти&quot;</content><expected>System saved our message in our order page  </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on radio button &quot;Потрібні столові прибори&quot;</content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Check the automatically generated address</content><expected>The system generated the address automatically, it is depend of you choice of address in the start of procedure. The choice of restaurants that can bring the order depends on the choice of address.</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green flag in the right part of page in category &quot;Інформація про доставку&quot;</content><expected>the system open page with map and input where you can write a name of street </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on search input and write name of street &quot;Боричів тік 30&quot;
+</content><expected></expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on green button in the lower part of page &quot;Підтвердити адресу&quot;</content><expected>The system redirects to the order page. The system displays an error message &quot;ОЙ! перепрошуємо, цей заклад більше не доступний&quot;
+The system does not allow to finish processing with a new address
+
+</expected><actual>Despite the changed address, the system allowed to continue placing the order. Later, the operator of the restaurant called and informed about the impossibility of delivery to the changed address.</actual><status>Failed</status></step>
+</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2022-12-04T14:27:58Z</createdon>
+																		<createdby>Karina Tysiachna</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+</run>
